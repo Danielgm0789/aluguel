@@ -1,0 +1,302 @@
+body {
+  background: url('https://a0.muscache.com/im/pictures/9caaca2d-6892-4638-b675-6a879974f5ed.jpg?im_w=960') center/cover fixed no-repeat;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0e5d8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(209, 168, 137, 0.5);
+}
+
+.header {
+  background-color: #d1a889;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.cpf-input {
+  display: flex;
+}
+
+.cpf-input label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.cpf-input input {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.cpf-input button {
+  flex: 1;
+  padding: 10px;
+  background-color: #d1a889;
+  color: white;
+  border: 1px solid #d1a889;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.cpf-input button:hover {
+  background-color: #bd9173;
+  border-color: #bd9173;
+}
+
+.saldo {
+  margin-top: 20px;
+}
+
+.saldo h4 {
+  margin: 0;
+}
+
+.saldo-input {
+  display: flex;
+}
+
+.saldo-input input {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.saldo-input button {
+  flex: 1;
+  padding: 10px;
+  background-color: #d1a889;
+  color: white;
+  border: 1px solid #d1a889;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.saldo-input button:hover {
+  background-color: #bd9173;
+  border-color: #bd9173;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d1a889;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #bd9173;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 10px rgba(209, 168, 137, 0.5);
+}
+
+input[type="radio"]#tab1:checked ~ #content1 {
+  display: block;
+}
+
+input[type="radio"]#tab2:checked ~ #content2 {
+  display: block;
+}
+
+#apartamentos, #reserva {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(209, 168, 137, 0.5);
+  border-radius: 20px;
+}
+
+#reserva {
+  padding: 0.5% 25px 23px 25px;
+}
+
+#apartamentos {
+  padding: 15px;
+}
+
+#apartamentos:hover, #apartamentos:hover #apartamento-grid p, #reserva:hover {
+  box-shadow: 0 0 10px rgba(209, 168, 137, 1);
+}
+
+#apartamento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+#titulo {
+  grid-column: span 3;
+  background-color: #d1a889;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#apartamento-grid p {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(209, 168, 137, 0.5);
+  padding: 10px;
+  margin: 0;
+}
+
+#quartos, #cozinha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#apartamento {
+  display:block;
+}
+
+#modal {
+  position: fixed;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#modal-content {
+  border-radius: 10px;
+  background-color: #f0e5d8;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  width: 40%;
+}
+
+#close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p#diaria {
+  font-weight: bold;
+}
+
+#preco-pagar-reserva {
+  font-weight: bold;
+}
+
+#div-button-alert-reserva {
+  display: flex;
+}
+
+#alert-reservar {
+  margin-left: 15px;
+}
+
+#submit-button-reservar, #btn-alugar-apartamento-lista, 
+#cancelar-reserva, #cancelar-reserva-sim, #cancelar-reserva-nao {
+  color: #FFF;
+  font-size: 18px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+#div-cancelar-reserva {
+  text-align: center;
+}
+
+#cancelar-reserva-sim, #cancelar-reserva-nao {
+  width: 150px;
+  margin: 0 15px 0 15px;
+}
+
+#cancelar-reserva-sim {
+  background-color: green;
+}
+
+#cancelar-reserva-sim:hover {
+  background-color: rgb(0, 97, 0);
+}
+
+#cancelar-reserva-nao {
+  background-color: red;
+}
+
+#cancelar-reserva-nao:hover {
+ background-color: rgb(157, 0, 0);
+}
+
+#submit-button-reservar, #btn-alugar-apartamento-lista, #cancelar-reserva {
+  background-color: #d1a889;
+}
+
+#submit-button-reservar:hover, #btn-alugar-apartamento-lista:hover, 
+#cancelar-reserva:hover, #cancelar-reserva-sim:hover, #cancelar-reserva-nao:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#submit-button-reservar:hover, #btn-alugar-apartamento-lista:hover, #cancelar-reserva:hover {
+  background-color: #bd9173;
+}
+
+#btn-alugar-apartamento-lista {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#diaria {
+  margin-left: 5px;
+}
+
+#div-datas {
+  text-align: center;
+}
+
+#span-data-saida {
+  margin-left: 10px;
+}
+
+#alert-cancelar {
+  color: red;
+}
+
+#div-cancelar-reserva {
+  display: none;
+}

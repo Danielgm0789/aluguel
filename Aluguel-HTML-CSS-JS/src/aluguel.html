@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel de Apartamentos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="listarApartamentos(), listarReservas()">
+  <div class="container">
+    
+    <div class="header">
+      <h1 id="conta">Acessar Conta</h1>
+    </div>
+
+    <div class="form">
+      <div class="cpf-input">
+        <label for="cpf">Digite o CPF da conta</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        <button id="acessar" name="acessar">Acessar</button>
+      </div>
+    </div>
+
+    <div class="saldo">
+      <h4>Saldo: R$<span id="valor">0.00</span></h4>
+      <label for="adicionar">Adicionar Saldo:</label>
+      <div class="saldo-input">
+        <input type="number" id="adicionar" name="adicionar" min="0" step="0.01" placeholder="Digite o valor a ser adicionado...">
+        <button id="adicionarSaldo" name="adicionarSaldo">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <input type="radio" name="tab" id="tab1" checked>
+      <label for="tab1">Apartamentos Disponíveis</label>
+      
+      <input type="radio" name="tab" id="tab2">
+      <label for="tab2">Reservas</label>
+      
+      <div class="tab-content" id="content1">
+        <div id="content-apartamentos">
+        </div>
+      </div>
+
+      <div class="tab-content" id="content2">
+        <h2 id="h2-tab2">Reservas feitas em seu nome.</h2>
+        <div id="content-reservas">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
